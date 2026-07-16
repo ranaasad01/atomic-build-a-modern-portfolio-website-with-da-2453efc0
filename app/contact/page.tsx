@@ -102,7 +102,7 @@ function FormField({
       </label>
       {children}
       {error && (
-        <span className="flex items-center gap-1.5 text-xs text-red-400">
+        <span className="flex items-center gap-1.5 text-xs text-orange-400">
           <AlertCircle size={12} />
           {error}
         </span>
@@ -115,12 +115,12 @@ function FormField({
 function AvailabilityBadge() {
   const t = useTranslations();
   return (
-    <div className="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-emerald-500/10 border border-emerald-500/20">
+    <div className="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-rose-500/10 border border-rose-500/20">
       <span className="relative flex h-2.5 w-2.5">
-        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-        <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500" />
+        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75" />
+        <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-rose-500" />
       </span>
-      <span className="text-sm font-medium text-emerald-400">
+      <span className="text-sm font-medium text-rose-400">
         {t("contact.availability")}
       </span>
     </div>
@@ -236,9 +236,9 @@ function ContactForm() {
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-          className="w-16 h-16 rounded-full bg-emerald-500/15 flex items-center justify-center"
+          className="w-16 h-16 rounded-full bg-rose-500/15 flex items-center justify-center"
         >
-          <CheckCircle size={32} className="text-emerald-400" />
+          <CheckCircle size={32} className="text-rose-400" />
         </motion.div>
         <div>
           <h3 className="text-xl font-semibold text-[var(--foreground)] mb-2">
@@ -272,7 +272,7 @@ function ContactForm() {
             value={form.name}
             onChange={handleChange}
             placeholder={t("contact.form.namePlaceholder")}
-            className={`${inputClass} ${errors.name ? "border-red-500/50 focus:ring-red-500/30" : ""}`}
+            className={`${inputClass} ${errors.name ? "border-orange-500/50 focus:ring-orange-500/30" : ""}`}
             autoComplete="name"
           />
         </FormField>
@@ -284,7 +284,7 @@ function ContactForm() {
             value={form.email}
             onChange={handleChange}
             placeholder={t("contact.form.emailPlaceholder")}
-            className={`${inputClass} ${errors.email ? "border-red-500/50 focus:ring-red-500/30" : ""}`}
+            className={`${inputClass} ${errors.email ? "border-orange-500/50 focus:ring-orange-500/30" : ""}`}
             autoComplete="email"
           />
         </FormField>
@@ -297,7 +297,7 @@ function ContactForm() {
           value={form.subject}
           onChange={handleChange}
           placeholder={t("contact.form.subjectPlaceholder")}
-          className={`${inputClass} ${errors.subject ? "border-red-500/50 focus:ring-red-500/30" : ""}`}
+          className={`${inputClass} ${errors.subject ? "border-orange-500/50 focus:ring-orange-500/30" : ""}`}
         />
       </FormField>
       <FormField label={t("contact.form.message")} id="message" error={errors.message}>
@@ -308,7 +308,7 @@ function ContactForm() {
           value={form.message}
           onChange={handleChange}
           placeholder={t("contact.form.messagePlaceholder")}
-          className={`${inputClass} resize-none ${errors.message ? "border-red-500/50 focus:ring-red-500/30" : ""}`}
+          className={`${inputClass} resize-none ${errors.message ? "border-orange-500/50 focus:ring-orange-500/30" : ""}`}
         />
       </FormField>
       <GlowButton type="submit" loading={loading}>

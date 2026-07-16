@@ -36,7 +36,7 @@ const featuredProjects = [
     tags: ["Next.js", "Shopify", "Tailwind", "Vercel"],
     image: "https://cdn.shopify.com/theme-store/inrup6g21zzikhu0s9anhpw8vfvc.jpg",
     href: "/projects",
-    accent: "from-emerald-500 to-teal-600",
+    accent: "from-rose-500 to-teal-600",
   },
 ];
 

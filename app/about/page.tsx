@@ -208,7 +208,7 @@ export default function AboutPage() {
                   variants={dotPulse}
                   initial="hidden"
                   animate="visible"
-                  className="w-2.5 h-2.5 rounded-full bg-emerald-400 flex-shrink-0"
+                  className="w-2.5 h-2.5 rounded-full bg-rose-400 flex-shrink-0"
                 />
                 <span className="text-xs font-medium text-[var(--foreground)]">
                   {t("about.availableBadge")}
@@ -384,7 +384,7 @@ export default function AboutPage() {
                           {entry.dateRange}
                         </span>
                         {entry.current && (
-                          <span className="text-xs font-semibold text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 px-3 py-1 rounded-full">
+                          <span className="text-xs font-semibold text-rose-400 bg-rose-400/10 border border-rose-400/20 px-3 py-1 rounded-full">
                             {t("about.currentBadge")}
                           </span>
                         )}
